@@ -1,0 +1,82 @@
+// styling for feature page
+@import "./variables.scss";
+.feature-content {
+  justify-content: center;
+
+  .contents {
+    width: 80%;
+    flex-direction: column;
+
+    .intro {
+      text-align: center;
+      height: 700px;
+      justify-content: end;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 100px;
+      @media screen and(max-width:660px) {
+        justify-content: center;
+      }
+      h1 {
+        font-size: 55px;
+        font-weight: bold;
+        @media screen and(max-width:660px) {
+          font-size: 35px;
+        }
+      }
+
+      span {
+        font-size: 25px;
+        font-weight: bold;
+        max-width: 800px;
+        margin-top: 200px;
+        text-align: left;
+        letter-spacing: 1px;
+        @media screen and(max-width:660px) {
+          font-size: 18px;
+          margin-top: 100px;
+        }
+      }
+      .underline {
+        width: 70px;
+        height: 2px;
+        background-color: $underline;
+        display: block;
+        align-self: baseline;
+        margin: 50px 0;
+        @media  screen and (max-width:480px) {
+          margin-bottom: 100px;
+          
+        }
+      }
+    }
+
+    .categories {
+      max-width: 800px;
+      width: 100%;
+      @media screen and(max-width:660px) {
+        margin-top: -170px;
+      }
+      .feature-category {
+        margin-top: 25px;
+        h2 {
+          font-size: 35px;
+          font-weight: bold;
+          @media screen and(max-width:660px) {
+            font-size: 25px;
+          }
+        }
+        ul {
+          margin: 0;
+          padding: 0 20px;
+          li {
+            font-size: 23px;
+            @media screen and(max-width:660px) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Averia+Sans+Libre:ital,wght@1,300&family=BIZ+UDGothic:wght@400;700&family=Fira+Sans&family=Josefin+Sans:ital,wght@0,300;1,600&family=Libre+Bodoni:ital,wght@1,500&family=Mulish:ital,wght@1,800&family=Oswald:wght@200;300&family=Padauk:wght@700&family=Playfair+Display+SC:wght@700&family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
@@ -22,32 +24,90 @@
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <!-- page starts here -->
-  <div class="main">
-<!-- menu starts here -->
-<div class="nav">
-  <div class="nav__wrapper">
-    <div class="site-logo"><h1 class="heading">IKKEN</h1>
-    </div>
-    <div class="menu-bar">
-    <!-- <i class="fa fa-reorder"></i> -->
-    <div class="lines"></div>
-    <div class="lines"></div>
-    </div>
+<body  >
+  <div class="side-bar">
+    THOUGHTS , STORIES AND IDEAS
   </div>
-</div>
+  <!-- page starts here -->
+  <div class="main flex column mauto rel"   >
+
+
+    <!-- menu starts here -->
+    <div class="nav flex-center">
+      <div class="nav__wrapper flex">
+        <div class="site-logo">
+          <h1 class="heading"><a href="./index.html">IKKEN</a></h1>
+        </div>
+
+        <div class="menu-bar " id="menu-bar" onclick="clickMenu()">
+          
+
+          <!-- <i class="fa fa-reorder"></i> -->
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="side-menu flex column abs" id="side-menu">
+
+      <img class="abs" src="./assets/icons8-close-50.png" onclick="removeMenu()" ></img>
+      <div class="tag">
+        <div class="story flex">
+
+
+          <span>Sign in</span>
+
+
+
+          <span>Sign up </span>
+
+
+        </div>
+
+      </div>
+
+      <a  href="#">Home
+      </a>
+      
+      <a href="./features.html">Features
+      </a>
+
+      <a href="./membership.html">Membership
+      </a>
+      <a href="#">Style Guide
+      </a>
+      <a href="./tags.html">Tags
+      </a>
+
+      <a href="./contact.html">Contact
+      </a>
+      <a href="./subscribe.html">Subscribes
+      </a>
+      <a href="#">Demos
+     
+      </a>
+
+      <a href="#">Get Theme
+     
+      </a>
+
+      <input type="text" onclick="clickMenuInput()" id="input2" placeholder="Type your keywords">
+      <small>PLEASE ENTER AT LEAST 3 CHARACTERS</small>
+    </div>
+
     <!-- slick slider for desktop starts here -->
-    <div class="slider">
+    <div class="slider" id="slider"onclick="removeMenu()" >
       <!-- first slider -->
       <div class="first">
         <div class="columns">
           <div class="column col-6 col-lg-12">
 
-            <div class="desc-box">
-          
+            <div class="desc-box flex column">
+
               <div class="tag">
-                <div class="story">
+                <div class="story flex">
                   <i class="fa fa-bookmark"></i>
 
                   <span>THE STORY <strong>
@@ -62,15 +122,17 @@
                 </div>
 
               </div>
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
+            </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
 
-              <button>CLOTH FASHION</button>
+              <button>Clothes Fashion</button>
             </div>
           </div>
           <div class="column col-6 col-lg-12">
@@ -84,10 +146,10 @@
       <div class="second">
         <div class="columns">
           <div class="column col-6 col-lg-12">
-            <div class="desc-box">
-          
+            <div class="desc-box flex column">
+
               <div class="tag">
-                <div class="story">
+                <div class="story flex">
                   <i class="fa fa-bookmark"></i>
 
                   <span>THE STORY <strong>
@@ -96,21 +158,23 @@
 
 
 
-                    <span class="year">APRIL <Strong>2019</Strong></span>
+                  <span class="year">APRIL <Strong>2019</Strong></span>
 
 
                 </div>
 
               </div>
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
+            </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
 
-              <button>CLOTH FASHION</button>
+              <button>Clothes Fashion</button>
             </div>
 
           </div>
@@ -125,10 +189,10 @@
       <div class="third">
         <div class="columns">
           <div class="column col-6 col-lg-12">
-            <div class="desc-box">
-          
+            <div class="desc-box flex column">
+
               <div class="tag">
-                <div class="story">
+                <div class="story flex">
                   <i class="fa fa-bookmark"></i>
 
                   <span>THE STORY <strong>
@@ -137,21 +201,23 @@
 
 
 
-                    <span class="year">APRIL <Strong>2019</Strong></span>
+                  <span class="year">APRIL <Strong>2019</Strong></span>
 
 
                 </div>
 
               </div>
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
+            </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
 
-              <button>CLOTH FASHION</button>
+              <button>Clothes Fashion</button>
             </div>
 
           </div>
@@ -164,7 +230,7 @@
       </div>
     </div>
     <!-- slider for small-view -->
-    <div class="slider2">
+    <div class="slider2" onclick="removeMenu()">
       <!-- first slider -->
       <div class="first">
         <div class="columns">
@@ -175,10 +241,10 @@
           </div>
           <div class="column col-12 ">
 
-            <div class="desc-box">
-          
+            <div class="desc-box flex column">
+
               <div class="tag">
-                <div class="story">
+                <div class="story flex">
                   <i class="fa fa-bookmark"></i>
 
                   <span>THE STORY <strong>
@@ -186,21 +252,23 @@
                     </strong></span>
 
 
-                    <span class="year">APRIL <Strong>2019</Strong></span>
+                  <span class="year">APRIL <Strong>2019</Strong></span>
 
 
                 </div>
 
               </div>
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
+            </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
 
-              <button>CLOTH FASHION</button>
+              <button>Clothes Fashion</button>
             </div>
           </div>
 
@@ -215,10 +283,10 @@
             </div>
           </div>
           <div class="column col-12">
-            <div class="desc-box">
-          
+            <div class="desc-box flex column">
+
               <div class="tag">
-                <div class="story">
+                <div class="story flex">
                   <i class="fa fa-bookmark"></i>
 
                   <span>THE STORY <strong>
@@ -227,21 +295,23 @@
 
 
 
-                    <span class="year">APRIL <Strong>2019</Strong></span>
+                  <span class="year">APRIL <Strong>2019</Strong></span>
 
 
                 </div>
 
               </div>
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
+            </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
 
-              <button>CLOTH FASHION</button>
+              <button>Clothes Fashion</button>
             </div>
 
           </div>
@@ -257,10 +327,10 @@
             </div>
           </div>
           <div class="column col-12">
-            <div class="desc-box">
-          
+            <div class="desc-box flex column">
+
               <div class="tag">
-                <div class="story">
+                <div class="story flex">
                   <i class="fa fa-bookmark"></i>
 
                   <span>THE STORY <strong>
@@ -269,21 +339,23 @@
 
 
 
-                    <span class="year">APRIL <Strong>2019</Strong></span>
+                  <span class="year">APRIL <Strong>2019</Strong></span>
 
 
                 </div>
 
               </div>
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
+            </a>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
 
-              <button>CLOTH FASHION</button>
+              <button>Clothes Fashion</button>
             </div>
 
           </div>
@@ -304,39 +376,58 @@
           </div>
           <div class="column col-6 col-lg-12">
 
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
 
-              <button>CLOTH FASHION</button>
             </div>
           </div>
-      
+
         </div>
       </div>
       <div class="second">
         <div class="columns">
 
-     
+
 
           <div class="column col-6 col-lg-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
@@ -349,24 +440,33 @@
       </div>
       <div class="third">
         <div class="columns">
-        
+
           <div class="column col-6 col-lg-12">
             <div class="img-cont" id="img3">
 
             </div>
           </div>
           <div class="column col-6 col-lg-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
@@ -379,8 +479,7 @@
 
 
     <!-- second section for small view -->
-    <div class="zig-zag-small" id="zig-zag-small" data-aos-once="true"
-    data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+    <div class="zig-zag-small" id="zig-zag-small" data-aos-once="true" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
       <div class="first">
         <div class="columns">
           <div class="column col-12">
@@ -390,17 +489,26 @@
           </div>
           <div class="column col-12">
 
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
           </div>
 
@@ -416,17 +524,26 @@
           </div>
 
           <div class="column col-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
@@ -440,17 +557,26 @@
             </div>
           </div>
           <div class="column col-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
@@ -465,8 +591,7 @@
 
     <!--  third section starts here-->
     <div class="zig-zag2" id="zig-zag2">
-      <div class="fourth" id="fourth"
-      data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+      <div class="fourth" id="fourth" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="columns">
 
           <div class="column col-12">
@@ -474,39 +599,57 @@
 
             </div>
           </div>
-<div class="column col-12">
-  <div class="desc-box" id="full-box">
-    <span>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    </span>
-    <h1>
-      Lorem ipsum dolor sit amet.
-    </h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-    <button>CLOTH FASHION</button>
-  </div>
-</div>
+          <div class="column col-12">
+            <div class="desc-box2 column flex" id="full-box">
+              <span class="details">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </span>
+            <a href="#" class="on-heading">
+                <h1>
+                Lorem ipsum dolor sit amet.
+              </h1>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
+            </div>
+          </div>
 
         </div>
 
-    
+
       </div>
       <div class="first" id="first" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="columns">
           <div class="column col-6 col-lg-12">
 
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
           </div>
           <div class="column col-6 col-lg-12">
@@ -526,17 +669,26 @@
           </div>
 
           <div class="column col-6 col-lg-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
@@ -545,17 +697,26 @@
       <div class="third" id="third" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="columns">
           <div class="column col-6 col-lg-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
@@ -571,38 +732,45 @@
 
     </div>
 
-   
+
     <!-- third section small view -->
     <div class="zig-zag2-small" id="zig-zag2-small">
-      <div class="fourth" id="fourth"  data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center"
-    >
+      <div class="fourth" id="fourth" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="columns">
 
           <div class="column col-12">
             <div class="img-cont" id="img4">
 
-             
+
             </div>
           </div>
 
           <div class="column col-12">
-            <div class="desc-box" id="full-box">
-              <span>
+            <div class="desc-box2 column flex" id="full-box">
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-          
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
-      <div class="first" id="first" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center"
-    >
+      <div class="first" id="first" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="columns">
           <div class="column col-12">
             <div class="img-cont" id="img1">
@@ -611,24 +779,32 @@
           </div>
           <div class="column col-12">
 
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
           </div>
 
         </div>
       </div>
-      <div class="second" id="second" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center"
-    >
+      <div class="second" id="second" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="columns">
 
           <div class="column col-12">
@@ -638,24 +814,32 @@
           </div>
 
           <div class="column col-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
         </div>
       </div>
-      <div class="third" id="third" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center"
->
+      <div class="third" id="third" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="columns">
           <div class="column col-12">
             <div class="img-cont" id="img3">
@@ -663,17 +847,26 @@
             </div>
           </div>
           <div class="column col-12">
-            <div class="desc-box">
+            <div class="desc-box2 column flex">
 
-              <span>
+              <span class="details">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </span>
-              <h1>
+            <a href="#" class="on-heading">
+                <h1>
                 Lorem ipsum dolor sit amet.
               </h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur earum perspiciatis.</p>
-
-              <button>CLOTH FASHION</button>
+            </a>
+              <div class="quick-links">
+                <a href="#">Lifestyle</a>
+                <a href="#">Look</a>
+                <a href="#">Fashion</a>
+                <a href="#">Review</a>
+                <span>
+                  <strong>3</strong>
+                  MIN READ
+                </span>
+              </div>
             </div>
 
           </div>
@@ -685,40 +878,57 @@
 
     </div>
 
+    <div class="subscribe mauto flex-center">
+      <div class="subscribe__wrapper flex" id="subscribe-bg">
+        <div class="subscribe__cont flex-center column">
+          <h1>
+            Subscribe to see what we're thinking
+          </h1>
 
-   
+          <input onclick="clickInput() " id="input" type="email" placeholder="Your Email Id">
+
+          <button class="subscribe__button">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
   </div>
 
   <!-- footer starts here -->
-<footer>
-  <div class="footer-wrapper">
-    <!-- left side links -->
-<div class="left-side">
-  <div class="links">
-    <a href="">Membership</a>
-    <a href="">Feature</a>
-    <a href="">Style Guide</a>
-    <a href="">Contact</a>
-    <a href="">Demos </a>
-    <a href="">Get Theme</a>
-  </div>
-  <div class="copy-right">
-<span>
-IKKEN © 2022. ALL RIGHT RESERVED. PUBLISHED WITH GHOST & IKKEN.
-</span>
-  </div>
-</div>
-<!-- right side links -->
-<div class="right-side">
-  <div class="icons">
-    <i class="fa fa-facebook"></i>
-    <i class="fa fa-instagram"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-share"></i>
-  </div>
-</div>
-  </div>
-</footer>
+  <footer class="flex-center">
+    <div class="footer-wrapper flex">
+      <!-- left side links -->
+      <div class="left-side flex column">
+        <div class="links flex">
+          <a href="">Membership</a>
+          <a href="">Feature</a>
+          <a href="">Style Guide</a>
+          <a href="">Contact</a>
+          <a href="">Demos </a>
+          <a href="">Get Theme</a>
+        </div>
+        <div class="copy-right flex">
+          <span>
+            IKKEN © 2022. ALL RIGHT RESERVED. PUBLISHED WITH GHOST & IKKEN.
+          </span>
+        </div>
+      </div>
+      <!-- right side links -->
+      <div class="right-side">
+        <div class="icons flex">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-share"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

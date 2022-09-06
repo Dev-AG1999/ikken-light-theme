@@ -1,0 +1,230 @@
+@import "./variables.scss";
+
+.membership {
+  height: auto;
+  margin: auto;
+  width: 100%;
+  flex-direction: column;
+
+  .img-cont {
+    max-width: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.089)),
+      url(https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    max-height: 400px;
+
+    @media screen and(max-width:960px) {
+      max-height: 700px;
+      height: 700px;
+    }
+    @media screen and(max-width:660px) {
+      max-height: 500px;
+      height: 500px;
+    }
+    .box {
+      top: 70%;
+      width: 80%;
+      padding: 30px;
+      box-shadow: none;
+      outline: none;
+      background-color: $bg-color;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+
+      @media screen and(max-width:660px) {
+        top: 30%;
+      }
+      .card-left {
+        max-width: 50%;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        @media screen and(max-width:480px) {
+          max-width: 100%;
+        }
+        h1 {
+          font-weight: bold;
+          align-self: baseline;
+          @media screen and(max-width:480px) {
+            font-size: 25px;
+          }
+        }
+        p {
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          @media screen and(max-width:480px) {
+            font-size: 14px;
+          }
+        }
+      }
+      .card-right {
+        max-width: 50%;
+        width: 50%;
+        justify-content: end;
+        align-items: center;
+        @media screen and(max-width:480px) {
+          display: none;
+        }
+        .global-svg {
+          width: 70px;
+          color: $line-color;
+        }
+      }
+    }
+  }
+
+  .plan {
+    top: 550px;
+    align-self: center;
+    @media screen and(max-width:960px) {
+      top: 750px;
+    }
+    @media screen and(max-width:660px) {
+      top: 600px;
+    }
+
+    .heading {
+      letter-spacing: 2px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+      small {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+    button {
+      text-align: center;
+      cursor: pointer;
+      padding: 15px;
+      font-size: 12px;
+      width: 150px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background-color: transparent;
+      border: 2px solid $line-color;
+      transition: all 0.3s ease-in-out;
+
+      @media screen and(max-width:960px) {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+        background-color: $line-color;
+        color: $bg-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.plan-card {
+  font-weight: bold;
+  margin-top: 200px;
+  width: 100%;
+
+  .card-wrapper {
+    width: 80%;
+    max-width: 80%;
+    margin-top: 100px;
+    @media screen and(max-width:660px) {
+      width: 100%;
+      max-width: 100%;
+    }
+    .columns {
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      .column {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .choose-plan {
+          margin-bottom: 20px;
+          padding: 30px 20px;
+          max-width: 400px;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          background-color: $bg-color;
+          @media screen and(max-width:660px) {
+            padding: 30px 10px;
+          }
+          .plan-type {
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 165%;
+            margin-bottom: 20px;
+          }
+          .plan-cost {
+            display: flex;
+            flex-direction: row;
+            max-width: 200px;
+            margin-bottom: 20px;
+
+            h1 {
+              font-size: 70px;
+              font-weight: bold;
+            }
+            h3 {
+              font-size: 35px;
+              font-weight: bold;
+              padding: 0 5px;
+            }
+            span {
+              align-self: center;
+              padding: 0 5px;
+              font-size: 30px;
+              font-weight: bold;
+            }
+          }
+
+          .plan-det {
+            max-width: 250px;
+            align-self: center;
+            font-size: 22px;
+            line-height: 150%;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+          }
+
+          small {
+            max-width: 100%;
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+          button {
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            width: 60%;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 2px solid $line-color;
+            transition: $trans2;
+            @media screen and (max-width: 480px) {
+              width: 100%;
+            }
+            &:hover {
+              transition: $trans2;
+              border: 2px solid transparent;
+              background-color: $line-color;
+              color: $bg-color;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

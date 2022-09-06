@@ -1,98 +1,64 @@
-$(document).ready(function(){
-  $('.slider').slick({
-
-      dots:true,
-      arrows:false,
+$(document).ready(function () {
+  $(".slider").slick({
+    dots: true,
+    arrows: false,
   });
-  $('.slider2').slick({
-
-      dots:true,
+  $(".slider2").slick({
+    dots: true,
   });
   AOS.init();
-  
+
+ 
+
+ 
 });
+// for opening the side menu
 
+function clickMenu() {
+  document.getElementById("side-menu").style.right = "0px";
 
-// window.onscroll = function() {scrollFunction()};
+  document.getElementById("slider").style.filter = "brightness(0.6)";
+}
 
+// for subscribe section input
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//     document.getElementById("zig-zag").style.marginTop = "-400px";
-    
-  
+function clickInput() {
+  document.getElementById("input").style.width = "80%";
+}
 
-//   } else {
-//     document.getElementById("zig-zag").style.marginTop = "-300px";
-   
+// for menu input section
 
-//   }
+function clickMenuInput() {
+  document.getElementById("input2").style.width = "80%";
+}
 
+// for contact page name input
 
+function contactNameIp(width) {
+  document.getElementById("contact-name").style.width = width;
+}
 
+// for contact page email input
 
+function contactEmailIp(width) {
+  document.getElementById("contact-email").style.width = width;
+}
 
+// for subscribe page name input
 
-//   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-//       document.getElementById("zig-zag-small").style.marginTop = "-100px";
-    
+function subNameIp(width) {
+  document.getElementById("subs-name").style.width = width;
+}
 
-//     } else {
-     
-//       document.getElementById("zig-zag-small").style.marginTop = "50px";
+// for subscribe page email input
 
-//     }
+function subEmailIp(width) {
+  document.getElementById("subs-email").style.width = width;
+}
 
-//       if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
-//       document.getElementById("zig-zag2-small").style.marginTop = "0px";
-    
+// for removing onclick event on side menu and slider
 
-//     } else {
-     
-//       document.getElementById("zig-zag2-small").style.marginTop = "100px";
-
-//     }
-
-
-//     if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
-//       document.getElementById("fourth").style.marginTop = "-100px";
-      
-    
-  
-//     } else {
-//       document.getElementById("fourth").style.marginTop = "100px";
-     
-  
-//     }
-//     if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
-//       document.getElementById("first").style.marginTop = "0px";
-      
-    
-  
-//     } else {
-//       document.getElementById("first").style.marginTop = "100px";
-     
-  
-//     }
-  
-//     if (document.body.scrollTop > 2600 || document.documentElement.scrollTop > 2600) {
-//       document.getElementById("second").style.marginTop = "0px";
-      
-    
-  
-//     } else {
-//       document.getElementById("second").style.marginTop = "100px";
-     
-  
-//     }
-//     if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
-//       document.getElementById("third").style.marginTop = "0px";
-      
-    
-  
-//     } else {
-//       document.getElementById("third").style.marginTop = "100px";
-     
-  
-//     }
-// }
+function removeMenu() {
+  document.getElementById("side-menu").style.right = "-500px";
+  document.getElementById("slider").style.filter = "brightness(1)";
+}

@@ -1,0 +1,339 @@
+.membership {
+  height: auto;
+  margin: auto;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.membership .img-cont {
+  max-width: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.089))), url(https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.089)), url(https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 960px) {
+  .membership .img-cont {
+    max-height: 700px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .membership .img-cont {
+    max-height: 500px;
+    height: 500px;
+  }
+}
+
+.membership .img-cont .box {
+  top: 70%;
+  width: 80%;
+  padding: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 660px) {
+  .membership .img-cont .box {
+    top: 30%;
+  }
+}
+
+.membership .img-cont .box .card-left {
+  max-width: 50%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .membership .img-cont .box .card-left {
+    max-width: 100%;
+  }
+}
+
+.membership .img-cont .box .card-left h1 {
+  font-weight: bold;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+@media screen and (max-width: 480px) {
+  .membership .img-cont .box .card-left h1 {
+    font-size: 25px;
+  }
+}
+
+.membership .img-cont .box .card-left p {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 480px) {
+  .membership .img-cont .box .card-left p {
+    font-size: 14px;
+  }
+}
+
+.membership .img-cont .box .card-right {
+  max-width: 50%;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .membership .img-cont .box .card-right {
+    display: none;
+  }
+}
+
+.membership .img-cont .box .card-right .global-svg {
+  width: 70px;
+  color: #000;
+}
+
+.membership .plan {
+  top: 550px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 960px) {
+  .membership .plan {
+    top: 750px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .membership .plan {
+    top: 600px;
+  }
+}
+
+.membership .plan .heading {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.membership .plan .heading small {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.membership .plan button {
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 12px;
+  width: 150px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: 2px solid #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 960px) {
+  .membership .plan button {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.membership .plan button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  background-color: #000;
+  color: #f9f9f9;
+  font-weight: bold;
+}
+
+.plan-card {
+  font-weight: bold;
+  margin-top: 200px;
+  width: 100%;
+}
+
+.plan-card .card-wrapper {
+  width: 80%;
+  max-width: 80%;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 660px) {
+  .plan-card .card-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.plan-card .card-wrapper .columns {
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-card .card-wrapper .columns .column {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan {
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  max-width: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 660px) {
+  .plan-card .card-wrapper .columns .column .choose-plan {
+    padding: 30px 10px;
+  }
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan .plan-type {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 165%;
+  margin-bottom: 20px;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan .plan-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan .plan-cost h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan .plan-cost h3 {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan .plan-cost span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan .plan-det {
+  max-width: 250px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan small {
+  max-width: 100%;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan button {
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  width: 60%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+  .plan-card .card-wrapper .columns .column .choose-plan button {
+    width: 100%;
+  }
+}
+
+.plan-card .card-wrapper .columns .column .choose-plan button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  background-color: #000;
+  color: #f9f9f9;
+  font-weight: bold;
+}
+/*# sourceMappingURL=membership.css.map */

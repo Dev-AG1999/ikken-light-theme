@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@1,300&family=BIZ+UDGothic&family=Oswald:wght@200;300&family=Playfair+Display+SC:wght@700&family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kaushan+Script&family=Lato:wght@100&family=Lobster&family=Oleo+Script&family=Oswald&family=Playball&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Averia+Sans+Libre:ital,wght@1,300&family=BIZ+UDGothic:wght@400;700&family=Fira+Sans&family=Josefin+Sans:ital,wght@0,300;1,600&family=Libre+Bodoni:ital,wght@1,500&family=Mulish:ital,wght@1,800&family=Oswald:wght@200;300&family=Padauk:wght@700&family=Playfair+Display+SC:wght@700&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="side-bar">
+    THOUGHTS , STORIES AND IDEAS
+  </div>
+  <!-- page starts here -->
+  <div class="main flex column mauto rel"   >
+
+
+    <!-- nav starts here -->
+    <div class="nav flex-center">
+      <div class="nav__wrapper flex">
+        <div class="site-logo">
+          <h1 class="heading"><a href="./index.html">IKKEN</a></h1>
+        </div>
+
+        <div class="menu-bar " id="menu-bar" onclick="clickMenu()">
+          
+
+        <!-- creating bars -->
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+
+      </div>
+    </div>
+
+
+<!-- side-menu starts here -->
+
+    <div class="side-menu flex column abs" id="side-menu">
+
+      <img class="abs" src="./assets/icons8-close-50.png" onclick="removeMenu()" ></img>
+      <div class="tag">
+        <div class="story flex">
+
+
+          <span>Sign in</span>
+
+
+
+          <span>Sign up </span>
+
+
+        </div>
+
+      </div>
+
+      <a  href="./index.html">Home
+      </a>
+      
+      <a href="./features.html">Features
+      </a>
+
+      <a href="#">Membership
+      </a>
+      <a href="#">Style Guide
+      </a>
+      <a href="./tags.html">Tags
+      </a>
+
+      <a href="./contact.html">Contact
+      </a>
+      <a href="./subscribe.html">Subscribes
+      </a>
+      <a href="#">Demos
+     
+      </a>
+
+      <a href="#">Get Theme
+     
+      </a>
+
+      <input type="text" onclick="clickMenuInput()" id="input2" placeholder="Type your keywords">
+      <small>PLEASE ENTER AT LEAST 3 CHARACTERS</small>
+    </div>
+
+
+    <!--1st section styling-->
+
+<div class="membership rel flex-center" onclick="removeMenu()">
+  <div class="img-cont flex-center" id="img-cont" >
+    <div class="box abs">
+      <div class="card-left flex">
+        <h1>Membership
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, labore!</p>
+      </div>
+      <div class="card-right flex">
+        <svg class="global-svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.986 0v24L12 19.723 3.014 24V0h17.972zM7.216 7.679c-.108 0-.125.054-.038.121L9.94 9.909a.311.311 0 01.098.316l-1.055 3.412c-.034.108.01.141.097.074l2.762-2.108a.274.274 0 01.316 0l2.762 2.109c.087.066.131.033.097-.075l-1.055-3.412a.312.312 0 01.098-.316L16.822 7.8c.087-.067.07-.121-.038-.121h-3.413a.288.288 0 01-.256-.195L12.06 4.072c-.033-.108-.087-.108-.12 0l-1.055 3.412a.287.287 0 01-.256.195H7.216z"></path></svg>
+    
+      </div>
+    
+    </div>
+ 
+  </div>
+  <div class="plan abs">
+    <div class="heading">
+      <small>CHOOSE YOUR PLAN</small>
+    </div>
+  
+    <div class="plans">
+      <button id="button" >
+  MONTHLY
+      </button >
+      
+      <button id="button2"  >
+        YEARLY
+      </button>
+    </div>
+  </div> 
+</div>
+
+
+<!-- plan option -->
+
+<div class="plan-card flex-center" >
+<div class="card-wrapper flex-center">
+  <div class="columns">
+    <div class="column col-4 col-xl-6 col-md-12">
+<div class="choose-plan flex">
+  <div class="plan-type">
+    <span>FREE</span>
+  </div>
+  <div class="plan-cost">
+    <h3>$</h3>
+    <h1>0</h1>
+    <span>/y</span>
+  </div>
+
+  <span class="plan-det">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, deserunt?
+  </span>
+  <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, accusantium.</small>
+
+  <button>
+  SUBSCRIBE NOW
+  </button>
+</div>
+
+    </div>
+    <div class="column col-4 col-xl-6 col-md-12">
+<div class="choose-plan flex">
+  <div class="plan-type">
+    <span>PREMIUM</span>
+  </div>
+  <div class="plan-cost">
+    <h3>$</h3>
+    <h1>79</h1>
+    <span>/y</span>
+  </div>
+
+  <span class="plan-det">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, deserunt?
+  </span>
+  <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, accusantium.</small>
+
+  <button>
+  SUBSCRIBE NOW
+  </button>
+</div>
+
+    </div>
+    <div class="column col-4 col-xl-6 col-md-12">
+<div class="choose-plan flex">
+  <div class="plan-type">
+    <span>PREMIUM PLUS</span>
+  </div>
+  <div class="plan-cost">
+    <h3>$</h3>
+    <h1>149</h1>
+    <span>/y</span>
+  </div>
+
+  <span class="plan-det">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, deserunt?
+  </span>
+  <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, accusantium.</small>
+
+  <button>
+  SUBSCRIBE NOW
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+
+  <!-- footer starts here -->
+
+  <footer class="flex-center">
+    <div class="footer-wrapper flex">
+      <!-- left side links -->
+      <div class="left-side flex column">
+        <div class="links flex">
+          <a href="">Membership</a>
+          <a href="">Feature</a>
+          <a href="">Style Guide</a>
+          <a href="">Contact</a>
+          <a href="">Demos </a>
+          <a href="">Get Theme</a>
+        </div>
+        <div class="copy-right flex">
+          <span>
+            IKKEN © 2022. ALL RIGHT RESERVED. PUBLISHED WITH GHOST & IKKEN.
+          </span>
+        </div>
+      </div>
+      <!-- right side links -->
+      <div class="right-side">
+        <div class="icons flex">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-share"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./index.js"></script>
+</body>
+</html>

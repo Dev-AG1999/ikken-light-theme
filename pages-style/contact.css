@@ -1,0 +1,168 @@
+.contact {
+  height: auto;
+  padding: 50px 0;
+}
+
+.contact .contact-wrapper {
+  width: 80%;
+  height: 100vh;
+}
+
+.contact .contact-wrapper .columns {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact-wrapper .columns .img-col {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .contact .contact-wrapper .columns .img-col {
+    display: none;
+  }
+}
+
+.contact .contact-wrapper .columns .img-col .img-cont {
+  background-image: url(https://images.unsplash.com/photo-1656873385938-8d1ce479cb68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact .contact-wrapper .columns .column {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-wrapper .columns .column .right {
+  height: 100%;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contact-wrapper .columns .column .right a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.contact .contact-wrapper .columns .column .right a i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.contact .contact-wrapper .columns .column .right a:hover i {
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .contact-wrapper .columns .column .right .contact-head {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.contact .contact-wrapper .columns .column .right .input-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.contact .contact-wrapper .columns .column .right .input-box input {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 65%;
+  margin: 15px 0;
+  padding: 10px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 660px) {
+  .contact .contact-wrapper .columns .column .right .input-box input {
+    font-size: 12px;
+  }
+}
+
+.contact .contact-wrapper .columns .column .right .msg-box {
+  width: 100%;
+}
+
+.contact .contact-wrapper .columns .column .right .msg-box textarea {
+  width: 65%;
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  min-height: 200px;
+  resize: vertical;
+}
+
+.contact .contact-wrapper .columns .column .right button {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 660px) {
+  .contact .contact-wrapper .columns .column .right button {
+    font-size: 10px;
+  }
+}
+
+.contact .contact-wrapper .columns .column .right button:hover {
+  background-color: #000;
+  color: #f9f9f9;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact .contact-wrapper .columns .column .right .bottom {
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.contact .contact-wrapper .columns .column .right .bottom strong {
+  font-weight: bold;
+}
+/*# sourceMappingURL=contact.css.map */
