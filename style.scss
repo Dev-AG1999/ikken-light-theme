@@ -183,6 +183,7 @@ body {
       @media screen and(max-width:660px) {
         font-size: 12px;
         text-align: center;
+        margin-left: 0;
       }
     }
     small {
@@ -905,7 +906,7 @@ body {
 // footer styling starts
 footer {
   padding: 50px 0;
-
+  margin-top: 50px;
   background: $bg-color;
   overflow: hidden;
   .footer-wrapper {
